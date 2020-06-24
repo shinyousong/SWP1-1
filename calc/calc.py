@@ -12,8 +12,12 @@ def application(environ, start_response):
 		num2=int(num2)
 		sum=num1+num2
 		mul=num1*num2
+	elif num1=='' and num2=='':
+		sum=-1
+		mul=-1
 	response_body=html % {'sum':sum, 'mul':mul}
 	start_response('200 OK',
 	[('Content-Type', 'text/html'), ('Content-Length', str(len(response_body)))])
 	return [response_body]
+
 
