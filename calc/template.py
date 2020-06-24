@@ -7,8 +7,8 @@ html = """
 			<input type="submit">
 		</form>
 		sum=%(sum)d<br>
-		mul=%(mul)d
-		
+		mul=%(mul)d<br>
+		%(flag)s
 		<br><br>the inital status is sum=-1, mul=-1
 	</body>
 </html>
